@@ -11,21 +11,41 @@
       html, body {
           height: 100%;
       }
+
+      .nav-bar__left-text {
+          font-size: 18px;
+          font-weight: 600
+      }
   </style>
 </head>
 <body>
 
 <div id="app">
-  <van-nav-bar title="开始体验"></van-nav-bar>
+  <van-nav-bar right-text="连接" title="开始体验" @click-right="connectBluetooth">
+    <template #left>
+      <p class="nav-bar__left-text">{{ isConnect ? "已连接" : "未连接" }}</p>
+    </template>
+  </van-nav-bar>
+  <van-search autofocus placeholder="扫描序列码" @search="printLabel"></van-search>
 </div>
 
 <script src="./lib/core.js"></script>
 <script>
   function main() {
+    const cxgBluetoothSerial = api.require("cxgBluetoothSerial");
+
     new Vue({
       el: "#app",
       data: {
-        message: "hello"
+        isConnect: false
+      },
+      methods: {
+        connectBluetooth() {
+          console.log("连接蓝牙");
+        },
+        printLabel() {
+          console.log("打印标签");
+        }
       }
     });
   }

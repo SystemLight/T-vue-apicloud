@@ -21,7 +21,8 @@ T-vue-apicloud使用的是传统多页面非打包模式进行开发，为了提
 
 |  文件名   | 作用  |
 |  :----  | :----  |
-| types  | vue和vant，apicloud平台的类型声明文件 |
+| node_modules  | 仅仅包含所需类型文件，真是使用库在views/lib文件夹下 |
+| apicloud  | 包含apicloud平台下的类型文件 |
 | views  | 所有页面都放置在这个目录下 |
 | package.json  | 前端工程化依赖管理配置文件 |
 
