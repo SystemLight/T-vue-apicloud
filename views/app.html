@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+  <title>apicloud</title>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no" />
+  <link rel="stylesheet" href="./lib/api.css">
+  <link rel="stylesheet" href="./lib/vant.css">
+  <style>
+      html, body {
+          height: 100%;
+      }
+  </style>
+</head>
+<body>
+
+<div id="app">
+  <van-nav-bar title="开始体验"></van-nav-bar>
+</div>
+
+<script src="./lib/vue.min.js"></script>
+<script src="./lib/vant.js"></script>
+<script>
+
+</script>
+<script>
+  apiready = function() {
+    new Vue({
+      el: "#app",
+      data: {
+        message: "hello"
+      }
+    });
+  };
+</script>
+</body>
+</html>
