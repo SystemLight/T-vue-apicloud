@@ -1,7 +1,7 @@
 {
   "include": [
     "src/**/*",
-    "custom.d.ts"
+    "apicloud.d.ts"
   ],
   "exclude": [
     "node_modules",

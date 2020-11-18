@@ -11,7 +11,7 @@
         SystemLight
     </author>
 
-    <content src="views/index.html"/>
+    <content src="views/main.html"/>
 
     <access origin="*"/>
 

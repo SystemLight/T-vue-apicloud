@@ -9,8 +9,13 @@ T-vue-apicloud集成vue和vant库允许你在apicloud平台进行更友好的Nat
 ```
 https://github.com/SystemLight/T-vue-apicloud.git
 无需运行 npm install
+启动之前确保全局安装了live-server，没有安装运行npm install live-server -g
 启动服务 npm run start
 ```
+
+## 注意
+T-vue-apicloud使用的是传统多页面非打包模式进行开发，为了提示友好保留了node_modules中类型文件，
+请不要使用npm指令安装任何其它模块，.gitignore默认是将node_modules包加入版本管理项的。
 
 ## 目录结构
 
