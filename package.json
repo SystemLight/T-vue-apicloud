@@ -9,7 +9,6 @@
   "author": "SystemLight",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^14.14.8"
   },
   "dependencies": {
     "vant": "^2.10.14",
